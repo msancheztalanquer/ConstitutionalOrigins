@@ -183,8 +183,9 @@ reg pluralapproval ib11.decade, robust
 
 
 
-**Note: If data were collapsed to produce TABLE A5, reload full data set here
-
+**Note: If data were collapsed to produce TABLE A5, reload full data set before proceeding
+// import delimited https://raw.githubusercontent.com/msancheztalanquer/ConstitutionalOrigins/main/ConstitutionalOrigins_Data.csv, clear
+// do labels.do
 
 
 
