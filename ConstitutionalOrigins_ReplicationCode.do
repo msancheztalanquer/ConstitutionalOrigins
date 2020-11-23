@@ -9,7 +9,24 @@
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 
 
-import delimited using "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/FLV8GQ"
+***Obtain and locally save variable labels:
+import delimited https://raw.githubusercontent.com/msancheztalanquer/ConstitutionalOrigins/main/labels.csv, varnames(1)
+
+tempname lb
+local N = c(N)
+file open `lb' using labels.do , write replace
+forvalues i = 1/`N' {
+    file write `lb' "label variable `= name[`i']' " 
+	file write `lb' `""`= varlab[`i']'""' _newline
+}
+file close `lb'
+type labels.do
+
+
+***Import data set and attach labels to variables: 
+import delimited https://raw.githubusercontent.com/msancheztalanquer/ConstitutionalOrigins/main/ConstitutionalOrigins_Data.csv, clear
+do labels.do
+
 
 
 
@@ -110,7 +127,7 @@ fe vce (cluster constitutionalprocessid)
 /*------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------
------------------------------------APPENDIX-----------------------------------------*/
+-----------------------------------ONLINE APPENDIX----------------------------------*/
 
 
 *Declare panel data
