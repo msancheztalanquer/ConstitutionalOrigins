@@ -4,8 +4,8 @@
 /* Negretto, Gabriel and Mariano Sánchez-Talanquer.                               */
 /* Constitutional Origins and Liberal Democracy. A Global Analysis, 1900-2015.    */
 /* American Political Science Review.                                             */
-/* Annotated Stata replication code for all Tables and Figures in the main        */
-/* text and in the online appendix.                                               */
+/* Annotated Stata replication code for all results in the main text and in the   */
+/* online appendix.                                                               */
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 
 
