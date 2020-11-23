@@ -1,56 +1,56 @@
-position,name,type,isnumeric,format,vallab,varlab
-1,country,str59,0,%18s,,Country name
-2,calendaryear,double,1,%8.0g,,Calendar year
-3,observationid,double,1,%12.0g,,Unique observation code
-4,constitutionalprocessid,int,1,%8.0g,,Constitution making process code
-5,constmakingbegins,byte,1,%8.0g,,Constitution making begins (binary)
-6,constitutionadopted,byte,1,%8.0g,,Constitution adopted (binary)
-7,afterconstitution,float,1,%9.0g,,Pre- and post-constitution indicator
-8,yearinconstitutionmaking,float,1,%9.0g,yeardummies2,Year in constitution making process (10 pre- & 10 post-)
-9,democraticconstitution,byte,1,%8.0g,,Constitution adopted in democratic year
-10,pluralapproval,byte,1,%8.0g,,Plural approval of new constitution
-11,pluralapproval_ordinal,byte,1,%8.0g,,"Number of forces that approved constitution (1, 2, 3+)"
-12,citizenconsultation,byte,1,%8.0g,,Citizen consultation in constitution making
-13,citizenconsultation_ordinal,byte,1,%8.0g,,Number of instances of citizen consultation in const making
-14,citizenvoting,byte,1,%8.0g,,Citizen voting in const making (referendum)
-15,citizenvoting_ordinal,byte,1,%8.0g,,Number of instances of citizen voting in const making (referendums)
-16,liberaldemocracy,double,1,%9.0g,,Liberal democracy index (V-Dem)
-17,df_legconstraints,double,1,%9.0g,,Legislative constraints on the executive index (V-Dem)
-18,df_juconstraints,double,1,%9.0g,,Judicial constraints on the executive index (V-Dem)
-19,executiveconstraints,long,1,%9.0g,,Executive constraints (Polity IV)
-20,dj_execpower,byte,1,%10.0g,,De jure executive power (CCP)
-21,dj_legpower,double,1,%10.0g,,De jure legislative power (CCP)
-22,bicameral,float,1,%9.0g,,Bicameral legislature (V-Dem)
-23,upperchamberdominance,double,1,%9.0g,,Relative dominance of upper chamber (V-Dem)
-24,upperchamberelected,double,1,%9.0g,,% of upper chamber elected (V-Dem)
-25,treated_year1,byte,1,%8.0g,,Treated t+1
-26,treated_year2,byte,1,%8.0g,,Treated t+2
-27,treated_year3,byte,1,%8.0g,,Treated t+3
-28,treated_year4,byte,1,%8.0g,,Treated t+4
-29,treated_year5,byte,1,%8.0g,,Treated t+5
-30,treated_year6,byte,1,%8.0g,,Treated t+6
-31,treated_year7,byte,1,%8.0g,,Treated t+7
-32,treated_year8,byte,1,%8.0g,,Treated t+8
-33,treated_year9,byte,1,%8.0g,,Treated t+9
-34,treated_year10,byte,1,%8.0g,,Treated t+10
-35,ageofdemocracy,float,1,%9.0g,,Age of democracy
-36,IHS_ageofdemocracy,float,1,%9.0g,,Age of democracy IHS transformation
-37,population_log,float,1,%9.0g,,Population (log)
-38,GDPpercapita_log,float,1,%9.0g,,GDP per capita (log)
-39,pluralcompetition,float,1,%9.0g,,100 minus % of vote of largest party (Vanhanen)
-40,civilsociety,double,1,%9.0g,,Core civil society index (V-Dem)
-41,decade,float,1,%9.0g,decade,"Decade (1=pre-1900s, 2=1900s, 3=1910s...)"
-42,decadeofadoption,float,1,%9.0g,decade,Decade in which constitution was adopted
-43,placeboyearinconstmaking,float,1,%9.0g,,Placebo year in constitution making process
-44,placeboafterconstitution,float,1,%9.0g,,Placebo pre- and post-constitution indicator
-45,treated_placeboyear1,byte,1,%8.0g,,Treated placebo t+1
-46,treated_placeboyear2,byte,1,%8.0g,,Treated placebo t+2
-47,treated_placeboyear3,byte,1,%8.0g,,Treated placebo t+3
-48,treated_placeboyear4,byte,1,%8.0g,,Treated placebo t+4
-49,treated_placeboyear5,byte,1,%8.0g,,Treated placebo t+5
-50,quinquennium1,float,1,%9.0g,,"Years -10 to -6 in 20 year window around const making (10 pre, 10 post)"
-51,quinquennium3,float,1,%9.0g,,"Years +1 to +5 in 20 year window around const making (10 pre, 10 post)"
-52,quinquennium4,float,1,%9.0g,,"Years +6 to +10 in 20 year window around const making (10 pre, 10 post)"
-53,quinquennium1_pluralapproval,float,1,%9.0g,,Interaction pluralapproval * quinquennium1
-54,quinquennium3_pluralapproval,float,1,%9.0g,,Interaction pluralapproval * quinquennium3
-55,quinquennium4_pluralapproval,float,1,%9.0g,,Interaction pluralapproval * quinquennium4
+name,varlab
+country,Country name
+calendaryear,Calendar year
+observationid,Unique observation code
+constitutionalprocessid,Constitution making process code
+constmakingbegins,Constitution making begins (binary)
+constitutionadopted,Constitution adopted (binary)
+afterconstitution,Pre- and post-constitution indicator
+yearinconstitutionmaking,Year in constitution making process (10 pre- & 10 post-)
+democraticconstitution,Constitution adopted in democratic year
+pluralapproval,Plural approval of new constitution
+pluralapproval_ordinal,"Number of forces that approved constitution (1, 2, 3+)"
+citizenconsultation,Citizen consultation in constitution making
+citizenconsultation_ordinal,Number of instances of citizen consultation in const making
+citizenvoting,Citizen voting in const making (referendum)
+citizenvoting_ordinal,Number of instances of citizen voting in const making (referendums)
+liberaldemocracy,Liberal democracy index (V-Dem)
+df_legconstraints,Legislative constraints on the executive index (V-Dem)
+df_juconstraints,Judicial constraints on the executive index (V-Dem)
+executiveconstraints,Executive constraints (Polity IV)
+dj_execpower,De jure executive power (CCP)
+dj_legpower,De jure legislative power (CCP)
+bicameral,Bicameral legislature (V-Dem)
+upperchamberdominance,Relative dominance of upper chamber (V-Dem)
+upperchamberelected,% of upper chamber elected (V-Dem)
+treated_year1,Treated t+1
+treated_year2,Treated t+2
+treated_year3,Treated t+3
+treated_year4,Treated t+4
+treated_year5,Treated t+5
+treated_year6,Treated t+6
+treated_year7,Treated t+7
+treated_year8,Treated t+8
+treated_year9,Treated t+9
+treated_year10,Treated t+10
+ageofdemocracy,Age of democracy
+IHS_ageofdemocracy,Age of democracy IHS transformation
+population_log,Population (log)
+GDPpercapita_log,GDP per capita (log)
+pluralcompetition,100 minus % of vote of largest party (Vanhanen)
+civilsociety,Core civil society index (V-Dem)
+decade,"Decade (1=pre-1900s, 2=1900s, 3=1910s...)"
+decadeofadoption,Decade in which constitution was adopted
+placeboyearinconstmaking,Placebo year in constitution making process
+placeboafterconstitution,Placebo pre- and post-constitution indicator
+treated_placeboyear1,Treated placebo t+1
+treated_placeboyear2,Treated placebo t+2
+treated_placeboyear3,Treated placebo t+3
+treated_placeboyear4,Treated placebo t+4
+treated_placeboyear5,Treated placebo t+5
+quinquennium1,"Years -10 to -6 in 20 year window around const making (10 pre, 10 post)"
+quinquennium3,"Years +1 to +5 in 20 year window around const making (10 pre, 10 post)"
+quinquennium4,"Years +6 to +10 in 20 year window around const making (10 pre, 10 post)"
+quinquennium1_pluralapproval,Interaction pluralapproval * quinquennium1
+quinquennium3_pluralapproval,Interaction pluralapproval * quinquennium3
+quinquennium4_pluralapproval,Interaction pluralapproval * quinquennium4
