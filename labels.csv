@@ -34,9 +34,9 @@ treated_year8,Treated t+8
 treated_year9,Treated t+9
 treated_year10,Treated t+10
 ageofdemocracy,Age of democracy
-IHS_ageofdemocracy,Age of democracy IHS transformation
+ihs_ageofdemocracy,Age of democracy IHS transformation
 population_log,Population (log)
-GDPpercapita_log,GDP per capita (log)
+gdppercapita_log,GDP per capita (log)
 pluralcompetition,100 minus % of vote of largest party (Vanhanen)
 civilsociety,Core civil society index (V-Dem)
 decade,"Decade (1=pre-1900s, 2=1900s, 3=1910s...)"
