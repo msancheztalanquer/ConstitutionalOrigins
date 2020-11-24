@@ -9,7 +9,14 @@
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 
 
-***Obtain variable and value labels and import data:
+
+/*------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+---------------------I. LOAD DATASET AND ADD LABELS---------------------------------*/ 
+
+
+***Obtain variable and value labels:
 import delimited https://raw.githubusercontent.com/msancheztalanquer/ConstitutionalOrigins/main/labels.csv, varnames(1)
 
 tempname lb
@@ -34,7 +41,7 @@ file close `lb'
 type labels.do
 
 
-***Import data and attach labels: 
+***Load data and attach labels: 
 import delimited https://raw.githubusercontent.com/msancheztalanquer/ConstitutionalOrigins/main/ConstitutionalOrigins_Data.csv, clear
 do labels.do
 label values decad* "decade"
@@ -46,7 +53,7 @@ label values yearin "yearinconstitutionmaking"
 /*------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------
---------------------------TABLES & FIGURE IN MAIN TEXT------------------------------*/ 
+-----------------------II. TABLES & FIGURE IN MAIN TEXT------------------------------*/ 
 
 
 *Declare panel data
@@ -140,7 +147,7 @@ fe vce (cluster constitutionalprocessid)
 /*------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------
------------------------------------ONLINE APPENDIX----------------------------------*/
+-------------------------------III. ONLINE APPENDIX----------------------------------*/
 
 
 *Declare panel data
