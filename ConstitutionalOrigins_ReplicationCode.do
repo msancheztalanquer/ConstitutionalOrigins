@@ -9,7 +9,7 @@
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 
 
-***Obtain and locally save variable labels:
+***Obtain variable and value labels and import data:
 import delimited https://raw.githubusercontent.com/msancheztalanquer/ConstitutionalOrigins/main/labels.csv, varnames(1)
 
 tempname lb
@@ -20,12 +20,25 @@ forvalues i = 1/`N' {
 	file write `lb' `""`= varlab[`i']'""' _newline
 }
 file close `lb'
+
+import delimited https://raw.githubusercontent.com/msancheztalanquer/ConstitutionalOrigins/main/labelvalues.csv, varnames(1) clear
+tempname lb
+local N = c(N)
+file open `lb' using labels.do , write append
+file write `lb' _newline
+forvalues i = 1/`N' {
+    file write `lb' "label define `=name[`i']' `=value[`i']' "
+    file write `lb' `""`=label[`i']'" , modify"' _newline 
+}
+file close `lb'
 type labels.do
 
 
-***Import data set and attach labels to variables: 
+***Import data and attach labels: 
 import delimited https://raw.githubusercontent.com/msancheztalanquer/ConstitutionalOrigins/main/ConstitutionalOrigins_Data.csv, clear
 do labels.do
+label values decad* "decade"
+label values yearin "yearinconstitutionmaking"
 
 
 
