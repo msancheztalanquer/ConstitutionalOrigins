@@ -199,7 +199,8 @@ reg pluralapproval ib11.decade, robust
 **Note: If data were collapsed to produce TABLE A5, reload full data set before proceeding
 // import delimited https://raw.githubusercontent.com/msancheztalanquer/ConstitutionalOrigins/main/ConstitutionalOrigins_Data.csv, clear
 // do labels.do
-
+// label values decad* "decade"
+// label values yearin "yearinconstitutionmaking"
 
 
 ****TABLE 6. DiD Estimates of the Effect of Constitution-Making Modalities on Liberal Democracy, 1900 - 2015. Ordinal coding of plural approval and direct popular participation variables.
@@ -335,7 +336,7 @@ ageofdemocracy population_log GDPpercapita_log pluralcompetition civilsociety i.
 
 
 
-****TABLE A10. Baseline DiD Estimates of the Effect of Constitution-Making Modalities on Bicameralism and Upper-chamberCharacteristics, 1900 - 2015.
+****TABLE A10. Baseline DiD Estimates of the Effect of Constitution-Making Modalities on Bicameralism and Upper Chamber Characteristics, 1900 - 2015.
 
 *Column 1. Bicameralism.
 xtreg bicameral i.pluralapproval##i.afterconstitution i.citizenconsultation##i.afterconstitution i.citizenvoting##i.afterconstitution ///
