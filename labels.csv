@@ -51,6 +51,6 @@ treated_placeboyear5,Treated placebo t+5
 quinquennium1,"Years -10 to -6 in 20 year window around const making (10 pre, 10 post)"
 quinquennium3,"Years +1 to +5 in 20 year window around const making (10 pre, 10 post)"
 quinquennium4,"Years +6 to +10 in 20 year window around const making (10 pre, 10 post)"
-quinquennium1_pluralapproval,Interaction pluralapproval * quinquennium1
-quinquennium3_pluralapproval,Interaction pluralapproval * quinquennium3
-quinquennium4_pluralapproval,Interaction pluralapproval * quinquennium4
+quinquennium1_pluralapproval,Years -10 to -6 x plural
+quinquennium3_pluralapproval,Years +1 to +5 x plural
+quinquennium4_pluralapproval,Years +6 to +10 x plural
